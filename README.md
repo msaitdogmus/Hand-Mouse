@@ -1,4 +1,5 @@
-# Artificial-Intelligence
+# Hand - Mouse
+
 
 A real-time hand tracking mouse control project built with 
 ""Python", 
