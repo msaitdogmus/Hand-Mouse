@@ -33,13 +33,3 @@ mouse by using hand gestures in front of the webcam..
 - NumPy
 
 ---
-
-## Project Structure
-
-```bash
-Artificial-Intelligence/
-│
-├── app.py
-├── README.md
-├── .gitignore
-└── LICENSE
