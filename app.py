@@ -122,10 +122,10 @@ def handle_scroll(index_tip, middle_tip, scroll_anchor_y):
 
 # Draws status panels
 def draw_status(frame, frame_width, frame_height, mode_text, status_color, thumb_index_distance, thumb_middle_distance, fps):
-    draw_panel(frame, 15, 15, 300, 145, Dark, alpha=0.45)
+    draw_panel(frame, 15, 15, 240, 115, Dark, alpha=0.45)
     draw_text(frame, f"Mode: {mode_text}", (30, 45), 0.8, status_color, 2)
-    draw_text(frame, f"Thumb-Index: {thumb_index_distance}", (30, 80), 0.65, White, 2)
-    draw_text(frame, f"Thumb-Middle: {thumb_middle_distance}", (30, 110), 0.65, White, 2)
+    draw_text(frame, f"Thumb-Index: {thumb_index_distance}", (30, 80), 0.65, White, 2) # baş parmak - işaret p. arası mesafe
+    draw_text(frame, f"Thumb-Middle: {thumb_middle_distance}", (30, 110), 0.65, White, 2) # baş p. - orta p arası mesafe
 
     draw_panel(frame, frame_width - 180, 15, frame_width - 15, 70, Dark, alpha=0.45)
     draw_text(frame, f"FPS: {int(fps)}", (frame_width - 160, 50), 0.75, Green, 2)
