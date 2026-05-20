@@ -10,7 +10,15 @@ import pyautogui
 
 
 # Enables Windows DPI awareness
-
+def enable_dpi_awareness():
+    if sys.platform.startswith("win"):
+        try:
+            ctypes.windll.shcore.SetProcessDpiAwareness(2)
+        except Exception:
+            try:
+                ctypes.windll.user32.SetProcessDPIAware()
+            except Exception:
+                pass
 
 
 # Returns hand finger states
