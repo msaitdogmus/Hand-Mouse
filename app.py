@@ -23,7 +23,7 @@ def enable_dpi_awareness():
 
 # Returns hand finger states
 def get_finger_states(landmarks):
-    index_up  = landmarks[8].y < landmarks[5].y
+    index_up  = landmarks[8].y < landmarks[6].y
     middle_up = landmarks[12].y < landmarks[10].y
     ring_up   = landmarks[16].y < landmarks[14].y
     pinky_up  = landmarks[20].y < landmarks[18].y
